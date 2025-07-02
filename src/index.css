@@ -3,22 +3,50 @@
 /* import font style */
 
 .card {
-  @apply bg-white rounded-lg drop-shadow-sm min-w-[400px] min-h-[500px] p-7;
+  @apply bg-white rounded-lg md:p-8 sm:p-4 max-w-[700px];
 }
 
 .card-header {
-  @apply gap-5 mb-10;
+  @apply mb-10 font-[outfit];
 }
 .card-header h1 {
-  @apply text-2xl font-bold text-[hsl(14,45%,36%)];
+  @apply text-4xl font-normal font-[young_serif];
+}
+
+.card-header h2 {
+  @apply text-3xl font-normal font-[young_serif] text-[hsl(14,45%,36%)];
 }
 
 .card-content {
-  @apply bg-amber-50;
+  @apply font-[Outfit];
+}
+
+.card-content h2 {
+  @apply text-3xl font-normal font-[young_serif] text-[hsl(14,45%,36%)];
+}
+
+.card-content li {
+  @apply p-2 leading-6;
+}
+
+card-footer {
+  @apply font-[outfit];
+}
+
+.card-footer h2 {
+  @apply font-normal font-[young_serif] text-[hsl(14,45%,36%)];
+}
+
+.card-footer li {
+  @apply mx-5 mr-60 flex justify-between;
+}
+
+.card-footer strong {
+  @apply text-[hsl(14,45%,36%)] font-bold;
 }
 
 li {
-  @apply text-[16px];
+  @apply text-[16px] mb-2 font-[outfit];
 }
 
 body {
@@ -26,13 +54,9 @@ body {
 }
 
 p {
-  @apply text-[16px];
+  @apply font-[Outfit] text-[16px];
 }
 
 hr {
-  @apply border-gray-700;
-}
-
-h1 {
-  @apply font-[young-serif] text-xl font-extrabold;
+  @apply border-gray-300 mx-3;
 }
