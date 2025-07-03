@@ -6,7 +6,7 @@ const RecipeCard = () => {
     <div className="card">
       <img src={omeletteImage} alt="omelette" className="rounded-lg mb-10" />
 
-      <section className="card-header xs:mx-5">
+      <section className="card-header mx-5 md:mx-0">
         <h1 className="mb-5">Simple Omelette Recipe</h1>
         <p className="mb-5 text-[hsl(30,10%,34%)]">
           An easy and quick dish, perfect for any meal. This classic omelette
@@ -30,7 +30,7 @@ const RecipeCard = () => {
           </ol>
         </div>
 
-        <section className="flex justify-start flex-col mt-10">
+        <section className="flex justify-start flex-col mt-10 mx-5 md:mx-0">
           <h2 className="mb-5">Ingredients</h2>
           <ol className="list-disc list-inside pl-3  text-[hsl(30,10%,34%)]">
             <li>2-3 large eggs</li>
@@ -46,7 +46,7 @@ const RecipeCard = () => {
 
       <hr className="my-5" />
 
-      <section className="card-content xs:mx-5">
+      <section className="card-content md:mx-0 mx-5">
         <h2>Instructions</h2>
         <ol className="list-decimal pl-5 mt-3 text-[hsl(30,10%,34%)]">
           <li className="p-3">
@@ -82,7 +82,7 @@ const RecipeCard = () => {
 
       <hr className="my-5" />
 
-      <section className="card-footer xs:mx-5 mb-10">
+      <section className="card-footer md:mx-0 mx-5 mb-10">
         <h2 className="mb-5 text-3xl">Nutrition</h2>
         <p className=" text-[hsl(30,10%,34%)]">
           The table below shows nutritional values per serving without the
